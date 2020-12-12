@@ -1,0 +1,443 @@
+body {
+  color: #1a1a1a;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lavenderblush;
+  padding: 0;
+}
+
+#wrapper {
+  background-color: lavenderblush;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+header {
+  background-image: url(../images/background_header.jpg);
+  padding: 14%;
+  background-color: lightsteelblue;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 23.33%;
+  padding: 10px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+header img {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  right: 212px;
+  bottom: 100px;
+}
+
+.share {
+  text-align: center;
+}
+
+#SMSform {
+  margin-right: 530px;
+  margin-left: 530px;
+
+}
+
+.horz_nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  background-image: linear-gradient(to left, royalblue, #B2FF59);
+  padding: 1px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  box-shadow: 0px 10px 10px #3d3c3c;
+  border-top: 2px solid white;
+}
+
+.horz_nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 120%;
+}
+
+.horz_nav a:hover,
+a:focus {
+  color: #5977ff;
+
+}
+
+.horz_nav ul li a:hover,
+.horz_nav ul li a:focus {
+  background-color: #B2FF59;
+}
+
+.horz_nav ul {
+  list-style: none;
+  position: relative;
+  /* So the first submenu can be positioned within the main menu */
+}
+
+.horz_nav ul ul {
+  display: none;
+  /* Don't display submenu until hover of the li element */
+  position: absolute;
+  top: 100%;
+  /* Position the submenu at the bottom of the main menu */
+}
+
+.horz_nav ul ul li {
+  float: none;
+  /* Display the submenus vertically */
+}
+
+.horz_nav ul li:hover>ul {
+  display: block;
+  /* Display the submenu on hover of the li element */
+}
+
+.horz_nav>ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Style the search box inside the navigation bar */
+.horz_nav input[type=text] {
+  padding: 5px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+.horz_nav button {
+  float: left;
+  width: 15%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+.horz_nav::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.item {
+  margin: 2px;
+  padding: 15px;
+}
+
+footer {
+  background-color: royalblue;
+  font-size: 100%;
+  text-align: center;
+  padding: 5px;
+
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  opacity: 0.7;
+}
+
+h2 {
+  text-decoration: underline;
+  color: navy;
+}
+
+#img_list li {
+  list-style: none;
+}
+
+#img_list li {
+  color: black;
+}
+
+#img_list img {
+  width: 3%;
+  margin: 0px;
+  padding: 2px;
+}
+
+.content_img img {
+  width: 50%;
+  height: auto;
+  padding-top: 30px;
+  padding-right: 20px;
+  float: left;
+  clear: both;
+  position: relative;
+  left: 500px;
+  bottom: 250px;
+}
+
+.content {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+.img2 {
+  padding: 0;
+  margin-top: 50px;
+}
+
+.item2 label {
+  float: left;
+  width: 10em;
+  text-align: right;
+}
+
+.item2 input {
+  margin-left: 1em;
+  margin-bottom: .5em;
+}
+
+#button {
+  margin-top: .7em;
+}
+
+form {
+  width: 450px;
+  float: left;
+}
+
+.search {
+  width: 50%;
+  position: relative;
+  display: block;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #8fdd12;
+  border-right: none;
+  padding: 2px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus {
+  color: black;
+}
+
+.searchButton {
+  width: 10px;
+  height: 33px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+  width: 34%;
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+}
+
+/*Login button in horz nav*/
+.button-link a:link,
+a:visited {
+  background-color: goldenrod;
+  padding: 2px 10px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+
+/*form CSS*/
+#SMSform {
+  max-width: 350px;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  padding: 10px;
+  background: #f4f7f8;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#SMSform fieldset {
+  border: none;
+}
+
+#SMSform label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+#SMSform input[type="text"],
+#SMSform input[type="date"],
+#SMSform input[type="datetime"],
+#SMSform input[type="email"],
+#SMSform input[type="number"],
+#SMSform input[type="search"],
+#SMSform input[type="time"],
+#SMSform input[type="url"],
+#SMSform textarea,
+#SMSform select {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: rgba(255, 255, 255, .1);
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  margin: 0;
+  outline: 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+}
+
+#SMSform input[type="text"]:focus,
+#SMSform input[type="date"]:focus,
+#SMSform input[type="datetime"]:focus,
+#SMSform input[type="email"]:focus,
+#SMSform input[type="number"]:focus,
+#SMSform input[type="search"]:focus,
+#SMSform input[type="time"]:focus,
+#SMSform input[type="url"]:focus,
+#SMSform textarea:focus,
+#SMSform select:focus {
+  background: #d2d9dd;
+}
+
+#SMSform select {
+  -webkit-appearance: menulist-button;
+  height: 35px;
+}
+
+#SMSform .number {
+  background: #1abc9c;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 15px 15px 15px 0px;
+}
+
+#SMSform input[type="submit"],
+#SMSform input[type="button"] {
+  position: relative;
+  display: block;
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  margin: 0 auto;
+  background: linear-gradient(to left, royalblue, #B2FF59);
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  width: 100%;
+  border: 1px solid #16a085;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+}
+
+#SMSform input[type="submit"]:hover,
+#SMSform input[type="button"]:hover {
+  background: royalblue;
+  opacity: 0.7;
+}
+
+
+@media only screen and (min-width: 760px) {
+  header {
+    padding-bottom: 15px;
+    height: 130px;
+  }
+
+  header h1 {
+    text-align: center;
+    color: navy;
+    font-family: "Monotype Corsiva";
+    font-size: 300%;
+    margin-bottom: 0;
+    margin-top: 0em;
+    padding-top: 45px;
+  }
+
+  header img {
+    width: 300px;
+    float: left;
+    margin-right: 1em;
+    margin-top: 20px;
+    margin-left: 20px;
+    /* box-shadow: 2px 2px 5px black; */
+    float: left;
+  }
+
+  .content {
+    padding-left: 8px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 759px) {
+  header img {
+    width: 20%;
+    float: left;
+    height: 100%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 0%;
+    padding-top: 5%;
+  }
+
+  header h1 {
+    text-align: center;
+    color: navy;
+    font-family: "Monotype Corsiva";
+    font-size: 200%;
+    margin-top: 0%;
+    padding-top: 5%;
+  }
+
+  .padding-div {
+    padding-left: 12px;
+    overflow: hidden;
+  }
+
+}

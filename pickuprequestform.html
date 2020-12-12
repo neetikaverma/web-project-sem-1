@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pickup Request Form</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content=" " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favi.png" />
+    <link rel="stylesheet" href="styles1/aboutusandform.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="horz_nav">
+        <ul>
+            <li>
+                <div class="item "><a href="index.html">Home</a></div>
+            </li>
+            <li>
+                <div class="item "><a href="#">Services</a></div>
+                <ul>
+                    <li><a href="repairservices.html">Repair Services</a></li>
+                    <li><a href="beauty.html">Beautician Services</a></li>
+                    <li><a href="waterServices.html">Water Delivery Services</a></li>
+                    <li><a href="packersandmovers.html">Moving and Packing Services</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="item "><a href="faq.html">Contact Us</a></div>
+            </li>
+            <li>
+                <div class="item "><a href="feedback.html">Feedback</a></div>
+            </li>
+        </ul>
+    </div>
+    <div class="pickup-form">
+        <form name="myform" onsubmit="return validForm()" method="GET" action="process2.html">
+            <fieldset>
+                <legend>Pickup Request Form</legend>
+                <label>*Pickup Type:</label>
+                <select id="dropdown" name="field">
+                    <option value="0">Select..</option>
+                    <option value="1">General</option>
+                    <option value="2">Office to Home</option>
+                    <option value="3">Household Shifting</option>
+                    <option value="4">Car Carriers</option>
+                    <option value="5">Others</option>
+                </select>
+                <label>*Name:</label>
+                <input type="text" name="field1" placeholder="Your name *" maxlength="40"><br>
+                <label>*Email:</label>
+                <input type="email" name="field2" placeholder="Your email *" onblur="emailValid()">
+                <label>*Contact No.</label>
+                <input type="text" name="field3" onblur="contactValid()"><br>
+                <label>*From location:</label>
+                <input type="text" name="field4">
+                <label>*To location:</label>
+                <input type="text" name="field5"><br>
+                <label>No of pieces:</label>
+                <input type="number" name="field6" min="0" max="50"><br>
+
+                <label>*Requester address</label>
+                <textarea name="field7" placeholder="Fill your address"></textarea>
+            </fieldset>
+            <input id="apply" onclick="myFunction()" type="submit" value="Submit" />
+        </form>
+    </div>
+
+
+
+    <footer>
+        <a href="aboutus.html">About Us | </a>
+        <a href="faq.html">Contact Us | </a>
+        <a href="#">Terms and conditions | </a>
+        <a href="feedback.html">Feedback </a>
+        <div class="img1">
+
+            <a href="http://www.instagram.com/" target="_blank" title="Go to instagram">
+                <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="http://www.facebook.com/" target="_blank" title="Go to facebook">
+                <i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="http://www.twitter.com/" target="_blank" title="Go to twitter">
+                <i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="http://www.gmail.com/" target="_blank" title="Go to instagram">
+                <i class="fa fa-envelope" aria-hidden="true"></i></a>
+
+        </div>
+
+    </footer>
+
+    <script src="js/form.js"></script>
+</body>
+
+</html>

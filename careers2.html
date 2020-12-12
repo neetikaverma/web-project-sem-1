@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Careers</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="apply for a position with our team" />
+        <meta name="keywords" content="apply, services, job " />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/logo.PNG"/>
+        <link rel="stylesheet" href="site-styles/main2.css" />
+        <title>Careers</title>
+    </head>
+    <body>
+        <div id="wrapper">
+
+            <header>
+                <img src="images/logo.PNG" alt="website logo">
+                <h1>Careers</h1>
+            </header>
+
+            <div class="horz_nav">
+                <div class="item"><a href="index.html">Home</a></div>
+                <div class="item"><a href="faq.html">Contact Us</a></div>
+                <div class="item"><a href="feedback.html">Feedback</a></div>
+                <div class="item"><a href="aboutus.html">About Us</a></div>
+            </div>
+            <main>
+                <form name="myForm" id="careerform" onsubmit="return validateForm()" method="GET">  
+                    <div class="container">  
+                    <h1>Employment Application Form</h1>
+                    <p>Do you want to work with our team of professionals? <br> <br> Enter your information below:</p>    
+                    <br>
+                        <label for="fname"> First Name: </label>   
+                        <input type="text" name="fname" id= "fname" placeholder="First Name" size="15"/>     
+                        <label for="lname"> Last Name: </label>    
+                        <input type="text" name="lname" id="lname" placeholder="Last Name" size="15"/>   
+                        <label for="email"> Email: </label>    
+                        <input type="text" name="email" id="email" placeholder="E-mail" size="15"/> 
+                        <label for="phone"> Phone Number: </label>    
+                        <input type="text" name="phone" id="phone" placeholder="Phone Number" size="15"/>
+                        <label for="address"> Address: </label>    
+                        <input type="text" name="address" id="address" placeholder="Address" size="15"/>   
+              
+                        <label for="department">   
+                        Department applying for:  
+                        </label>      
+                        <select type="text" value ="" id="dpmt">
+                            <option value=""></option>    
+                            <option value="RepairServices">Repair Services</option>  
+                            <option value="BeauticianServices">Beautician Services</option>  
+                            <option value="WaterServices">Water Services</option>  
+                            <option value="MovingPackingServices">Moving and Packing Services</option>  
+                        </select>  
+            
+                    <br>
+                    <br>
+
+                    <div id="gen">  
+                    <label for="relocation">   
+                    Are you willing to relocate?
+                    <br>  
+                    </label><br>  
+                        <input type="radio" value="Y" name="settings" checked > Yes   
+                        <input type="radio" value="N" name="settings"> No   
+                        <input type="radio" value="U" name="settings"> Unknown  
+                    </div>
+
+                    <br>
+
+                    <label for="lastComp"> Last Company: </label>    
+                    <input type="text" name="lastComp" id="lastComp" placeholder= "Name of Previous Company" size="15"/> <br>
+
+                    <label for="slryReq"> Salary Requirements: </label>    
+                    <input type="text" name="slryReq" id="slryReq" placeholder= "Salary Requirements" size="15"/> <br>
+            
+            
+                    Additional Information:  
+                    <textarea 
+                        cols="80" rows="4" id="references" name="references" placeholder="References">  
+                    </textarea>  
+  
+                    <button id="apply" type="submit" class="applybtn">Send Application</button>    
+                    </div>
+                </form>  
+            </main>
+        </div>
+        <footer>
+            <a href="mailto:services@home.com">services@home.com</a>
+        </footer>
+        <script src="js/cvalidate2.js"></script>
+    </body>
+</html>

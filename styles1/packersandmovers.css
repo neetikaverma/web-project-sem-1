@@ -1,0 +1,271 @@
+body {
+  color: #1a1a1a;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #cce8ff;
+}
+
+#wrapper {
+  background-color: lavenderblush;
+  margin: 0 auto;
+}
+
+
+header {
+  background-image: linear-gradient(to bottom right, royalblue, #B2FF59);
+  padding-bottom: 1.5%;
+  height: 700%;
+}
+
+header img {
+  width: 20%;
+  float: left;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+header h1 {
+  text-align: center;
+  color: navy;
+  font-family: "Monotype Corsiva";
+  margin-top: 0%;
+  padding-top: 3%;
+}
+
+.horz_nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  background-image: linear-gradient(to left, royalblue, #B2FF59);
+  padding: 1px;
+  margin-top: 0px;
+  text-align: center;
+  box-shadow: 0px 10px 10px #3d3c3c;
+  border-top: 2px solid white;
+}
+
+.horz_nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 120%;
+}
+
+.horz_nav a:hover,
+a:focus {
+  color: blue;
+}
+
+
+.item {
+  margin: 5px;
+  padding: 15px;
+}
+
+
+/*Book online button in horz nav*/
+.button-link a:link,
+a:visited {
+  background-color: goldenrod;
+  padding: 2px 10px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 15px;
+  width: 18%;
+  float: left;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu div:hover {
+  background-color: #B2FF59;
+}
+
+.item1 {
+  margin: 5px;
+  padding: 15px;
+  background-color: royalblue;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+/* img {
+  width: 80%;
+  height: auto;
+} */
+
+#image_rollovers img {
+  padding: 5%;
+  width: 80%;
+  height: 300px;
+  margin: auto;
+  float: left;
+}
+
+#image_rollovers p {
+  line-height: 1.7em;
+}
+
+@media only screen and (max-width: 779px) {
+  #image_rollovers img {
+    width: 195%;
+    height: 250px;
+    margin: 0px;
+  }
+
+  /* #image_rollovers .container{
+    float: none;
+    }
+    main p{
+      clear: both;;
+    }
+    #image_rollovers img{
+      float: none;
+    } */
+}
+
+/* .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 80%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: royalblue;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+} */
+
+h2 {
+  text-decoration: none;
+  color: navy;
+}
+
+#img_list li {
+  list-style: none;
+}
+
+#img_list li {
+  color: black;
+}
+
+#img_list img {
+  width: 3%;
+  margin: 0px;
+  padding: 2px;
+}
+
+.content {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+
+footer {
+  background-color: royalblue;
+  font-size: 100%;
+  text-align: center;
+  padding: 5px;
+
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  opacity: 0.7;
+}
+
+@media only screen and (min-width: 760px) {
+  header {
+    padding-bottom: 15px;
+    height: 130px;
+  }
+
+  header h1 {
+    text-align: center;
+    color: navy;
+    font-family: "Monotype Corsiva";
+    font-size: 300%;
+    margin-bottom: 0;
+    margin-top: 0em;
+    padding-top: 45px;
+  }
+
+  header img {
+    width: 300px;
+    float: left;
+    margin-right: 1em;
+    margin-top: 20px;
+    margin-left: 20px;
+    /* box-shadow: 2px 2px 5px black; */
+    float: left;
+  }
+
+  .content {
+    padding-left: 8px;
+    overflow: hidden;
+  }
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 759px) {
+  header img {
+    width: 20%;
+    float: left;
+    height: 100%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 0%;
+    padding-top: 5%;
+  }
+
+  header h1 {
+    text-align: center;
+    color: navy;
+    font-family: "Monotype Corsiva";
+    font-size: 200%;
+    margin-top: 0%;
+    padding-top: 5%;
+  }
+
+  .padding-div {
+    padding-left: 12px;
+    overflow: hidden;
+  }
+
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="continous online service with our best representatives" />
+    <meta name="keywords" content="continous, non-stop, 24/7, online support " />
+    <link rel="shortcut icon" href="images/online-service.jpg" />
+    <link rel="stylesheet" href="site-styles/rwd2.css" />
+    <title>24/7 Online Support</title>
+</head>
+<body>
+    <div id="wrapper"> 
+        <header>
+            <img src="images/logo.PNG" alt="website logo">
+            <h1>24/7 Online Support</h1>
+        </header>
+        
+        <div class="horz_nav">
+            <div class="item"><a href="index.html">Home</a></div>
+            <div class="item"><a href="faq.html">Contact Us</a></div>
+            <div class="item"><a href="feedback.html">Feedback</a></div>
+            <div class="item"><a href="aboutus.html">About Us</a></div>
+        </div>
+        <div class="chat-content">
+            <h1>Chat with Us!</h1>
+            <img 
+            src="images/live-support.jpg" 
+            alt="live technical support"
+            width="500"
+            height="250"
+            /> 
+            <br>
+            <p>Get in touch with one of our live agents. They are happy to assist!</p>
+            <p>Our company has made it our mission to ensure that our customers importance comes first, so if you have any concerns please contact us through our live chat box!</p>
+            <p>To get started please click on the open button below:</p>
+        </div>
+        <button class="open-button" onclick="openForm()">Chat</button>
+
+        <div class="chat-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h1>Welcome to Chat</h1>
+        
+            <label for="msg"><b>How can we help you?</b></label>
+            <textarea placeholder="Enter your message.." name="msg" required></textarea>
+        
+            <button onclick="chatmsg()" type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+        <script src="js/popchat.js"> </script>
+        <div class="footer-clear">
+            <a href="mailto:services@home.com">services@home.com</a>
+        </div>
+    </div>    
+</body>
+</html>

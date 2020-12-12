@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link rel ="shortcut icon" href="images/SignIn.png"/>
+        <link rel ="stylesheet" href ="styles/rwd.css"/>
+    </head>
+    <body>
+        <div id="wrapper1">
+            <header>
+                <img src="images/logo.PNG" alt="Website logo">
+                <h1> Login</h1>  
+            </header>
+
+            <div class="horz_nav">
+                <div class="item "><a href="index.html">Home</a></div>
+                <div class="item "><a href="aboutus.html">About Us</a></div>
+                <div class="item "><a href="faq.html">Contact Us</a></div>
+                <div class="item "><a href="feedback.html">Feedback</a></div>
+            </div>
+
+        <div class="container">
+            <h1>Sign in With</h1>
+            <button onClick= "facebookLink();" class="signBtn signBtn_facebook">Login with Facebook</button>
+            <button onClick="googleLink();" class="signBtn signBtn_google ">Login with Google</button><hr>
+            <img class="user_image clear" src="images/userLogin.png" alt="user image">
+            <form id="feedback" method="get" action="post.html" onsubmit="event.preventDefault();return login(),loginStore()">                   
+                    <br><label for="user">Username</label>
+                    <input class= "form-control" type="text" name="user" id="user"  onkeyup="validatename()" onblur="validatename()"><br>
+                    <label for="password">Password</label>
+                    <input class= "form-control" type="password" name="password" id="password" onkeyup="validatpassword()" onblur="validatpassword()"><br>
+                    <input id="checkbox" type="checkbox" onclick="showHide()">
+                    <label><b>Show/Hide Password</b></label>
+                    <input type="submit" value="Login" class="post sign_button" />
+                    <p class="signup_link">Not a member?<a href="signUp.html">Sign Up now</a></p>
+            </form>
+        </div>
+            <footer>
+                <a href="mailto:services@home.com">services@home.com</a >
+            </footer>
+
+        <script src="js/login.js"></script>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,250 @@
+/* common css for all starts */
+body {
+    color: #1a1a1a;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #cce8ff;  
+  }
+  
+  #wrapper {
+    background-color:rgb(255, 255, 255);
+    margin: 0 auto;
+  }
+  
+  header {
+    background-image: linear-gradient(to bottom right,royalblue , #B2FF59);
+    padding-bottom:1.5%;
+    height:700%;
+  }
+    
+  header img {
+  width: 20%;
+  float: left;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-left: 5%;
+  }
+    
+  header h1{
+  text-align:center;
+  color:navy;
+  font-family: "Monotype Corsiva";
+  margin-top: 0%;
+  padding-top: 3%;
+  }
+  
+  .horz_nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  background-image: linear-gradient(to left, royalblue, #B2FF59);
+  padding: 1px;
+  margin-top: 0px;
+  text-align: center;
+  box-shadow:   0px 10px 10px #3d3c3c;
+  border-top: 2px solid white; 
+  }
+  
+  .horz_nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 120%;
+  }
+  
+  .horz_nav a:hover, a:focus { 
+  color:#B2FF59;
+  }
+  
+  
+  .item {
+  margin: 5px;
+  padding: 15px;
+  }
+  
+  .menu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 15px;
+  width:18%;
+  float: left;
+  }
+  
+  .menu a{
+    color:white;
+    text-decoration: none;
+  }
+  
+  .menu div:hover {
+  background-color: #B2FF59;
+  }
+  
+  .item1 {
+  margin: 5px;
+  padding: 15px;
+  background-color: royalblue;
+  }
+  
+  footer {
+    background-color:royalblue;
+    font-size: 100%;
+    font-style: italic;
+    text-align: center;
+    padding: 5px;
+  
+  }
+  footer a{
+    text-decoration: none;
+    color:white;
+  }
+  /* common css for all ends */
+  h2 {
+    text-decoration: underline;
+    color: navy;
+  } 
+  
+  .h2_first{
+    padding-top: 13px;
+  }
+  
+  
+  
+  .image_main{
+    padding-left: 5%;
+    overflow: hidden;
+  
+  }
+  .image_main  h1{
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(122, 56, 2);
+  }
+  .scroll img{
+    padding-top: 3%;
+    padding-left: 14%;
+    height: auto;
+    width: 70%;
+    }
+  /* form css start */
+fieldset{
+    margin: 15px;
+}
+label {
+    float: center;
+    width: 5%;
+    text-align: right;}
+
+#mail{
+    margin-left:7.1%;
+    margin-bottom: .5%;
+}
+
+
+
+#phone{
+    margin-left: 1.6%;
+    margin-bottom: .5%;
+}
+#fname{
+  margin-left: 4.3%;
+  margin-bottom: .5%;
+}
+#lname{
+  margin-left: 4.5%;
+  margin-bottom: .5%;
+}
+
+
+
+body{  
+    font-family: Calibri, Helvetica, sans-serif;  
+    background-color: rgb(220, 253, 250);  
+  }  
+  .container {  
+      padding: 50px;  
+    background-color: rgb(144, 208, 230);  
+    margin-right:5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }  
+    
+  textarea {  
+    width: 90%;  
+    padding: 15px;  
+    margin: 5px 0 22px 0;  
+    display: inline-block;  
+    border: none;  
+    background: #f1f1f1;  
+  }  
+ 
+    
+
+  hr {  
+    border: 1px solid #f1f1f1;  
+    margin-bottom: 25px;  
+  }  
+
+
+.button{
+margin-left: 25px;
+margin-bottom: 25px;
+
+}
+  /* form css end */
+  /* responsive for big screen*/
+  @media only screen and (min-width: 760px) {
+    header {
+      padding-bottom:15px;
+      height:130px;
+    }
+    header h1{
+        text-align:center;
+        color:navy;
+        font-family: "Monotype Corsiva";
+        font-size: 300%;
+        margin-bottom: 0;
+        margin-top: 0em;
+        padding-top: 45px;
+    }
+    header img {
+        width: 300px;
+        float: left;
+        margin-right: 1em;
+        margin-top: 20px;
+        margin-left: 20px;
+       
+        float: left;
+      }  
+    
+  }
+  
+  /* responsive for small screen and phones */
+  @media only screen and (min-width: 480px) and (max-width: 759px) {
+  header img {
+    width: 20%;
+    float: left;
+    height: 100%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 0%;
+    padding-top: 5%;
+  }
+  header h1{
+        text-align:center;
+        color:navy;
+        font-family: "Monotype Corsiva";
+        font-size: 200%;
+        margin-top: 0%;
+        padding-top: 5%;
+      
+  }
+  
+
+
+
+
+  }
+  
+  

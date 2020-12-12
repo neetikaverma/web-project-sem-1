@@ -1,0 +1,382 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+footer {
+  background-color: royalblue;
+  text-align: center;
+  padding: 5px;
+
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}
+
+main img {
+  width: 50%;
+}
+
+
+h1 {
+  color: navy;
+}
+
+.head {
+  font-weight: bold;
+}
+
+
+h2 {
+  color: navy;
+}
+
+#wrapper {
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: lavenderblush;
+}
+
+hr {
+  border: 2px solid #B2FF59;
+  border-radius: 5px;
+  background-color: #B2FF59;
+}
+
+.card {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  background-image: linear-gradient(to left, royalblue, #B2FF59);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 17px;
+}
+
+.card {
+  float: left;
+  width: 22.33%;
+  padding: 31.5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.7;
+}
+
+.horz_nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  background-image: linear-gradient(to left, royalblue, #B2FF59);
+  padding: 1px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  box-shadow: 0px 10px 10px #3d3c3c;
+  border-top: 2px solid white;
+}
+
+.horz_nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 120%;
+}
+
+.horz_nav a:hover,
+a:focus {
+  color: royalblue;
+}
+
+.horz_nav ul li a:hover,
+.horz_nav ul li a:focus {
+  background-color: #B2FF59;
+}
+
+.horz_nav ul {
+  list-style: none;
+  position: relative;
+  /* So the first submenu can be positioned within the main menu */
+}
+
+.horz_nav ul ul {
+  display: none;
+  /* Don't display submenu until hover of the li element */
+  position: absolute;
+  top: 100%;
+  /* Position the submenu at the bottom of the main menu */
+}
+
+.horz_nav ul ul li {
+  float: none;
+  /* Display the submenus vertically */
+}
+
+.horz_nav ul li:hover>ul {
+  display: block;
+  /* Display the submenu on hover of the li element */
+}
+
+.horz_nav>ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.item {
+  margin: 5px;
+  padding: 15px;
+}
+
+.item a {
+  padding: 5px;
+}
+
+
+/* progress bar */
+
+.meter {
+  background: #ccc;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  box-shadow : 0 -1px 1px rgba(255,255,255,0.3); 
+  width: 33.33%;
+  display:block;
+  height: 17px;
+  margin-bottom: 8px;
+  padding: 5px;
+  position: relative;
+  left:33.33%;
+}
+  
+  .meter span{
+    display:block;
+    height:100%;
+    border-top-right-radius:8px;
+    border-bottom-right-radius:8px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    background-color: rgb(54, 179, 236);
+    background-image:linear-gradient(to top, rgb(54, 179, 236) 37%,  rgb(51, 213, 235) 69%);
+    /* box-shadow :0 2px 9px rgba(255,255,255,0.3) inset 0 -2px 6px rgba(0,0,0,0.4); */
+    position:relative;
+    overflow:hidden;
+    transition: 2s ease-out;
+  }
+
+  h3{color: navy;}
+
+  
+  /* form css */
+.pickup-form {
+  max-width: 500px;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  margin: 10px auto;
+  padding: 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.pickup-form fieldset {
+  border: none;
+}
+
+.pickup-form legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.pickup-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.pickup-form input[type="text"],
+.pickup-form input[type="date"],
+.pickup-form input[type="datetime"],
+.pickup-form input[type="email"],
+.pickup-form input[type="number"],
+.pickup-form input[type="search"],
+.pickup-form input[type="time"],
+.pickup-form input[type="url"],
+.pickup-form textarea,
+.pickup-form select {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(255, 255, 255, .1);
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  margin: 0;
+  outline: 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+}
+
+.pickup-form input[type="text"]:focus,
+.pickup-form input[type="date"]:focus,
+.pickup-form input[type="datetime"]:focus,
+.pickup-form input[type="email"]:focus,
+.pickup-form input[type="number"]:focus,
+.pickup-form input[type="search"]:focus,
+.pickup-form input[type="time"]:focus,
+.pickup-form input[type="url"]:focus,
+.pickup-form textarea:focus,
+.pickup-form select:focus {
+  background: #d2d9dd;
+}
+
+.pickup-form select {
+  -webkit-appearance: menulist-button;
+  height: 35px;
+}
+
+.pickup-form .number {
+  background-image: linear-gradient(to left, royalblue, #B2FF59);
+  ;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 15px 15px 15px 0px;
+}
+
+.pickup-form input[type="submit"],
+.pickup-form input[type="button"] {
+  position: relative;
+  display: block;
+  padding: 19px 39px 18px 39px;
+  color: white;
+  margin: 0 auto;
+  background-color: royalblue;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  width: 100%;
+  border: 50px solid #3dd114;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.pickup-form input[type="submit"]:hover,
+.pickup-form input[type="button"]:hover {
+  color: black;
+}
+
+@media only screen and (min-width: 760px) {
+  .card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    float: left;
+    width: 55.33%;
+    padding: 20px;
+    font-size: 20px;
+    position: relative;
+  }
+
+  .title {
+    color: grey;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 1066px) {
+  .card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    max-width: 275px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    float: left;
+    width: 23.33%;
+    padding: 31.6px;
+    font-size: 16px;
+  }
+
+  .title {
+    color: grey;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 759px) {
+  .card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    max-width: 275px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    font-size: 15px;
+  }
+
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+
+  .card {
+    float: left;
+    width: 100%;
+    padding: 70px;
+  }
+}
+
+/* css for process2.html */
+img{
+  height: 200px;
+  width:40%;
+  margin:auto 30%;
+
+}

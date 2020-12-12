@@ -1,0 +1,126 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>QUERY FORM </title>
+      <!-- different style sheets -->
+    <meta charset="utf-8" />
+    <meta name ="description" content ="This site is made to enhance your beauty at the comfort of your home"/>
+    <meta name ="keywords" content ="hair men women makeup"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel ="shortcut icon" href="images/favicon3.ico"/>
+    <link rel ="stylesheet" href ="style/form.css"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script  src="js/queryform.js"></script>
+
+  </head>
+  <body>
+    <main>
+    <div id="wrapper">
+     
+    <header>
+      <img src="images/logo.PNG" alt="Website logo">
+      <h1> Query Form </h1>  
+    </header>
+ <!-- horizontal nav area -->
+    <div class="horz_nav">
+      <div class="item "><a href="index.html">Home</a></div>
+      <div class="item "><a href="faq.html">Contact Us</a></div>
+      <div class="item "><a href="feedback.html">Feedback</a></div>
+      <div class="item "><a href="aboutus.html">About us</a></div>
+    </div>
+
+       <!-- slide show using js -->
+   <div class="scroll">
+    <img src="images/ask.jpg" alt="slideshow" id="slideshow"  >
+   </div>
+   
+   <!-- image -->
+    <div class="image_main">
+        <h1>YOUR QUESTIONS, OUR ANSWERS</h1>
+     
+
+        <!-- start of query form with validation-->
+      <form id="regform" method="get" action="submit.html"  onsubmit="return validateForm() " >
+        
+        <div class="container">  
+              
+              <fieldset>
+              <legend>DETAILS</legend> 
+              <label for="fname" >First Name: </label>  <input type="text" id="fname" name="fname"/> 
+                <span>*</span><br />
+              <label for="lname" >Last Name: </label>  <input type="text" id="lname" name="lname"/>
+                <span>*</span><br /> 
+              <label  >E-Mail: </label>  <input type="text" id="mail" name="mail"/> 
+                <span>*</span><br />
+              <label for="phone" >Phone Number: </label>  <input type="text" id="phone" name="phone"/>
+                <span>*</span><br />
+     
+          </fieldset>
+      
+  
+          <fieldset>
+              <legend>QUERY</legend> <br>
+          
+              
+              How would you like to be contacted: <br> <br>
+              <select id="contact"  >
+               
+                  <option value="email">E-mail</option>
+                  <option value="phone">Phone Number</option>
+              </select> <br> <br>
+              Detailed description of query:<br> <br>
+              <textarea rows="7" cols="40"></textarea> <br>
+
+              Would you like to receive announcement about special offers? <br> <br>
+              <input type="checkbox" id="yes" name="yes" value="yes"> YES, I'd like to receive information about special offers. <br> <br>   
+          </fieldset><br>
+      
+        
+        
+          <input id="register" type="submit" value="Send Query">
+            
+
+          </div> 
+     </form>
+        <!-- end of query form with validation -->
+    </div>
+    </div>
+
+
+    <!-- fAQ's using java script -->
+    <section>
+      <h2>QUESTIONS</h2>       
+      <div id="accordion">
+     <h3>Why should we ask questions?</h3>
+    <div>
+      <ul><li> To acquire knowledge about our pacakges</li>
+        <li> To eliminate confusion in timings </li>
+          <li> To clear any doubt regarding any appointment</li>
+            <li> To solve a problem</li>
+            <li> To ask for a specific professional</li>
+      </ul>
+    </div>
+    <h3>what is the average responding time?</h3>
+    <div>
+      <p>We usually take upto 24-48 hours on regular days. During holidays and special days it can take more time than what it normally do. Please be paitient</p>
+      
+    </div>
+    <h3>What happens if we get no response?</h3>
+    <div>
+      <p>Oh No! we are really sorry if that happens. If it has been more than 48 hours, Please send us your query on our website mail. Thank you.
+      </p>
+    </div>
+      </div>
+  </section>
+
+      <footer>
+        <a href="mailto:services@home.com">services@home.com</a >
+      </footer>
+    
+    </main>
+  </body>
+</html>
