@@ -7,47 +7,102 @@ window.onload = function () {
  -----------------------------------------------------*/
 function validForm() {
 
+
+
   let name = document.forms["myform"]["field1"].value;
+
   let email = document.forms["myform"]["field2"].value;
+
   let contact = document.forms["myform"]["field3"].value;
+
   let fromlocation = document.forms["myform"]["field4"].value;
+
   let tolocation = document.forms["myform"]["field5"].value;
+
+  let address = document.forms["myform"]["field7"].value;
+
   let dropdown = document.getElementById("dropdown");
-  let ddlText = dropdown.options[dropdown.selectedIndex].value;
+
+  let ddlText = dropdown.options[dropdown.selectedIndex].value; 
+
+
+
 
 
   //  Validate the dropdown list
+
   
+
   if (ddlText == 0) {
+
     alert("Please select a type!");
+
     return false;
+
   }
+
+
 
   if (name == "") {
+
     alert("Please enter your name!");
+
     return false;
+
   }
+
+
 
   else if (email == "") {
+
     alert("Please enter your email id!");
+
     return false;
+
   }
+
+
 
   else if (contact == "") {
+
     alert("Please enter the contact no!");
+
     return false;
+
   }
+
   else if (fromlocation == "") {
+
     alert("Please enter the 'From' location!");
+
     return false;
+
   }
+
+
 
   else if (tolocation == "") {
+
     alert("Please enter the 'To' location!");
+
     return false;
+
   }
 
+
+
+  else if (address == "") {
+
+    alert("Please enter the address!");
+
+    return false;
+
+  }
+
+
+
   return true;
+
 }
 
 /*----------------------------------------------------------
